@@ -10,8 +10,6 @@ app.use(cors());
 
 connectToMongo();
 
-app.use("/images", express.static('upload/images'));
-
 app.use('/', require('./routes/productRoutes'));
 app.use('/', require('./routes/userRoutes'));
 app.use('/', require('./routes/cartRoutes'));
